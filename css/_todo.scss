@@ -1,0 +1,93 @@
+.todo{
+    max-width: 75px;
+    margin-left: 15px;
+    @include tablets {
+        margin-left: 0;
+    }
+    &__1{
+        @include tablets {
+            display: none;
+        }
+
+    }
+   
+    &__2{
+        transform: translate(-182%, -109%);
+        @include tablets {
+            display: none;
+        }
+    }
+    &__3{
+        transform: translate(-26%, -71%);
+        @include tablets {
+            display: none;
+        }
+    }
+    &__title{
+        font-family: 'TTPols';
+        font-size: 9px;
+        border-bottom: 1px #000 dashed;
+        @include tablets {
+            padding-top: 25px;
+            margin-bottom: 15px;
+        }
+        padding-top: 25px;
+        margin-bottom: 15px;
+    }
+    &__list{
+        font-family: "Mediator Narrow Web Light";
+        font-weight: lighter;
+    }
+    &__item{
+        &-text{
+            font-size: 8px;
+        }
+        @include tablets {
+            margin-bottom: 8px;
+        }
+    }
+   
+    &__point{
+        display: inline-block;
+        height: 6px;
+        width: 6px;
+        background-color: #000;
+        border-radius: 50%;
+    }
+    &__pic{
+        width: 107px;
+        height: 191px;
+        background-image: url('../img/ww.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 50px;
+       
+    }
+    &__mobile{
+        display: none;
+        @include tablets {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            margin: 0 15%;
+        }
+        @include phones{
+            margin: 0 5%; 
+        }
+        
+    }
+}
+
+.todo__mobile-img-wrapper {
+    @include tablets {
+        margin-top: 15px;
+        margin-bottom: 45px;
+        width: 100%;
+        background-image: url('../img/ww.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+   
+}

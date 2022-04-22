@@ -1,0 +1,83 @@
+.issue {
+    display: inline-flex;
+   height: 26px;
+    max-width: 146px;
+    z-index: 100;
+    justify-content: space-between;
+    color: #000;
+    @include tablets {
+        display: none;
+     }
+   
+    &--white{
+        color: #fff;
+        top: 20px;
+    left: 20px;
+    position: absolute;
+        .issue__number{
+            border-color: #fff;
+        }
+        .issue__title::after{
+            background-color: #fff;
+        }
+        .issue__title::before{
+            background-color: #fff;
+        }
+        &-mobile{
+            @include tablets {
+                display: inline-flex;
+                position: absolute;
+                top: 15%;
+                left: 15%;
+             }
+        }
+    }
+    &__number{
+        display: flex;
+        font-family: "TTMilks";
+        font-size: 18px;
+        font-weight: bold;
+        max-height: 26px;
+        max-width: 58px;
+        align-content:flex-end;
+        justify-self: center;
+        border: 2px solid;
+        border-color: #000;
+        margin-right: 8%;
+        padding-left: 3%;
+        padding-right: 3%;
+        &-symbol{
+            font-size: 12px;
+            align-self: flex-end;
+        }
+
+    }
+    &__title{
+        font-family:'Mediator' ;
+        font-size: 11px;
+        font-weight: bolder;
+        position: relative;
+        &::after{
+            display: block;
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 10%;
+            background-color: #000;
+            top: 0%;
+           
+        }
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 10%;
+            background-color: #000;
+            left: 89.2%;
+            bottom: 0;
+            top: 47%;
+        }
+
+    }
+}

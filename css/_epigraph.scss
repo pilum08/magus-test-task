@@ -1,0 +1,96 @@
+.epigraph {
+    display: flex;
+    &__1{
+        max-width: 247px;
+        max-height: 376;
+        transform: translate(-77px, 10px);
+    margin-bottom: 38px;
+    @include tablets {
+        transform: none;
+        max-width: inherit;
+        max-height:inherit;
+    }
+    }
+    &__2{
+        width: 247px;
+        height: 187px;
+        transform: translate(-11%, -189%);
+    margin-bottom: 38px;
+    @include tablets {
+        transform: none;
+        max-width: inherit;
+        max-height:inherit;
+    }
+    }
+    &__title{
+        font-family: 'Probel';
+        font-size: 30px;
+        line-height: 1.1;
+    }
+   &__content{
+       font-family: 'Mediator';
+       font-weight:bold;
+       font-size: 10px;
+       padding-bottom: 10px;
+   }
+   &__footer{
+    font-family: 'Mediator';
+    font-weight: normal;
+    font-size: 9px;
+    &-text {
+        margin-left: 5px;
+    }
+   }
+   &__line {
+       position: relative;
+       margin: 5px;
+       width: 50px;
+       height: inherit;
+       border-left: 1px #666 solid;
+        border-bottom: 1px #000 solid;
+        &::after{
+            content: '';
+            position: absolute;
+            display: block;
+            background-color: #000;
+            width: 4px;
+            height: 16px;
+            top: 68%;
+            right: 72%;
+            @include tablets {
+                display: none;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 4px;
+            height: 4px;
+            top: 98.7%;
+            left: 55.3%;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        @include tablets{
+            margin: 5px;
+       width: 15px;
+        }
+        
+   }
+   &__polygon {
+       position: absolute;
+       width: 9px;
+       height: 9px;
+       top: 94%;
+       left: 133%;
+       background-image: url('../img/polygon.svg');
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       @include tablets{
+        top: 90%;
+       left: 133%;
+    }
+   }
+}

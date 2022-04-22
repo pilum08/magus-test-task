@@ -1,0 +1,670 @@
+@import url(//db.onlinewebfonts.com/c/3011eef00e6e7eaf387e195b31727b93?family=Mediator+Narrow+Web+Light);
+@font-face {
+  font-family: "Probel";
+  src: url("../fonts/Probel.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "TTMilks";
+  src: url("../fonts/TypeType - TTMilks-Bold_0.otf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Mediator";
+  src: url("../fonts/MDT45_0.otf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "Mediator";
+  src: url("../fonts/MDT55_0.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Mediator";
+  src: url("../fonts/MDT75_0.otf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Mediator";
+  src: url("../fonts/MDT95_0.otf");
+  font-weight: bolder;
+  font-style: normal; }
+@font-face {
+  font-family: "MediatorNarrow";
+  src: url("../fonts/MDN47_0.otf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "MediatorNarrow";
+  src: url("../fonts/MDN87_0.otf");
+  font-weight: bolder;
+  font-style: normal; }
+@font-face {
+  font-family: "MediatorNarrow";
+  src: url("../fonts/MDN47_0.otf");
+  font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "Kozuka";
+  src: url("../fonts/KozGoPr6N-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "DekaSerifNew";
+  src: url("../fonts/DNF55.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "TTPols";
+  src: url("../fonts/TypeType - TT Polls Script Bold.otf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'wingding';
+  src: url("../fonts/wingding.ttf"); }
+/*@media (max-width: 768px) {
+   
+   
+    
+   
+    .heading__subtitle {
+        padding: 0 14%;
+    }
+   
+    }
+    .reviews__content {
+        max-width: 95vw;
+    }
+    
+    .reviews__text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 11px;
+    }
+    body {
+        font-size: 1.45rem;
+    }
+    .hero__title-wrapper {
+        width: 100%;
+    }
+    .hero__text {
+        width: 63%;
+    }
+}
+
+@media (max-height: 480px) {
+    .hero__bg {
+        transform: translate(2%, -2%);
+    }
+    .hero__content-text {
+        transform: translateY(-150%);
+    }
+    .features {
+        transform: translateY(-443%);
+    }
+}*/
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  color: #000; }
+
+.wrapper {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  position: relative; }
+
+table {
+  border-collapse: collapse; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: auto;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }
+
+.spread {
+  max-width: 1200px;
+  display: flex;
+  position: relative;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .spread {
+      max-width: inherit;
+      margin: 0 15%;
+      flex-direction: column; } }
+  @media screen and (max-width: 480px) {
+    .spread {
+      margin: 0 5%; } }
+  .spread__2 {
+    transform: translate(0, 96%); }
+    @media screen and (max-width: 768px) {
+      .spread__2 {
+        transform: none; } }
+  .spread__3 {
+    transform: translate(0, 195%); }
+    @media screen and (max-width: 768px) {
+      .spread__3 {
+        display: none; } }
+
+.issue {
+  display: inline-flex;
+  height: 26px;
+  max-width: 146px;
+  z-index: 100;
+  justify-content: space-between;
+  color: #000; }
+  @media screen and (max-width: 768px) {
+    .issue {
+      display: none; } }
+  .issue--white {
+    color: #fff;
+    top: 20px;
+    left: 20px;
+    position: absolute; }
+    .issue--white .issue__number {
+      border-color: #fff; }
+    .issue--white .issue__title::after {
+      background-color: #fff; }
+    .issue--white .issue__title::before {
+      background-color: #fff; }
+    @media screen and (max-width: 768px) {
+      .issue--white-mobile {
+        display: inline-flex;
+        position: absolute;
+        top: 15%;
+        left: 15%; } }
+  .issue__number {
+    display: flex;
+    font-family: "TTMilks";
+    font-size: 18px;
+    font-weight: bold;
+    max-height: 26px;
+    max-width: 58px;
+    align-content: flex-end;
+    justify-self: center;
+    border: 2px solid;
+    border-color: #000;
+    margin-right: 8%;
+    padding-left: 3%;
+    padding-right: 3%; }
+    .issue__number-symbol {
+      font-size: 12px;
+      align-self: flex-end; }
+  .issue__title {
+    font-family: "Mediator";
+    font-size: 11px;
+    font-weight: bolder;
+    position: relative; }
+    .issue__title::after {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 10%;
+      background-color: #000;
+      top: 0%; }
+    .issue__title::before {
+      display: block;
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 10%;
+      background-color: #000;
+      left: 89.2%;
+      bottom: 0;
+      top: 47%; }
+
+.page {
+  position: relative;
+  width: 600px;
+  border-right: 1px #000 solid; }
+  @media screen and (max-width: 768px) {
+    .page {
+      border: none;
+      width: inherit; } }
+  .page__44 {
+    transform: translateY(77%); }
+    @media screen and (max-width: 768px) {
+      .page__44 {
+        transform: none; } }
+  .page__45 {
+    transform: translateY(77%);
+    border-right: none; }
+    @media screen and (max-width: 768px) {
+      .page__45 {
+        transform: none; } }
+  .page__46 {
+    transform: translateY(122%); }
+    @media screen and (max-width: 768px) {
+      .page__46 {
+        transform: none; } }
+  .page__47 {
+    transform: translateY(122%);
+    border-right: none; }
+    @media screen and (max-width: 768px) {
+      .page__47 {
+        transform: none; } }
+  .page__48 {
+    transform: translateY(77%); }
+    @media screen and (max-width: 768px) {
+      .page__48 {
+        transform: none; } }
+  .page__49 {
+    transform: translateY(83%);
+    border-right: none; }
+    @media screen and (max-width: 768px) {
+      .page__49 {
+        transform: none; } }
+  .page__content {
+    display: flex;
+    justify-content: flex-end; }
+    @media screen and (max-width: 768px) {
+      .page__content {
+        flex-direction: column; } }
+  .page__article {
+    font-family: 'DekaSerifNew';
+    font-size: 9px;
+    column-count: 2;
+    column-gap: 15px;
+    max-width: 432px;
+    margin-right: 45px;
+    margin-left: 15px; }
+    .page__article--weed {
+      column-gap: 152px; }
+      @media screen and (max-width: 768px) {
+        .page__article--weed {
+          column-gap: 0; } }
+    @media screen and (max-width: 768px) {
+      .page__article {
+        column-count: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: inherit;
+        margin-right: 0;
+        margin-left: 0; } }
+  .page__footer {
+    font-family: 'Mediator';
+    font-size: 10px;
+    width: 138px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    justify-content: space-between; }
+    .page__footer-number {
+      font-weight: bold; }
+    .page__footer-date {
+      font-weight: bold; }
+    @media screen and (max-width: 768px) {
+      .page__footer {
+        display: none; } }
+  .page__article--bold {
+    font-family: 'Mediator';
+    text-transform: uppercase;
+    font-weight: bolder; }
+
+.img-desc {
+  width: 50px;
+  height: 50px;
+  transform: translate(-237%, -800%);
+  font-family: 'Mediator';
+  font-weight: bold;
+  font-size: 6px; }
+
+.stars {
+  font-family: 'wingding';
+  margin: 20px auto;
+  width: 25px; }
+
+.epigraph {
+  display: flex; }
+  .epigraph__1 {
+    max-width: 247px;
+    max-height: 376;
+    transform: translate(-77px, 10px);
+    margin-bottom: 38px; }
+    @media screen and (max-width: 768px) {
+      .epigraph__1 {
+        transform: none;
+        max-width: inherit;
+        max-height: inherit; } }
+  .epigraph__2 {
+    width: 247px;
+    height: 187px;
+    transform: translate(-11%, -189%);
+    margin-bottom: 38px; }
+    @media screen and (max-width: 768px) {
+      .epigraph__2 {
+        transform: none;
+        max-width: inherit;
+        max-height: inherit; } }
+  .epigraph__title {
+    font-family: 'Probel';
+    font-size: 30px;
+    line-height: 1.1; }
+  .epigraph__content {
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 10px;
+    padding-bottom: 10px; }
+  .epigraph__footer {
+    font-family: 'Mediator';
+    font-weight: normal;
+    font-size: 9px; }
+    .epigraph__footer-text {
+      margin-left: 5px; }
+  .epigraph__line {
+    position: relative;
+    margin: 5px;
+    width: 50px;
+    height: inherit;
+    border-left: 1px #666 solid;
+    border-bottom: 1px #000 solid; }
+    .epigraph__line::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: #000;
+      width: 4px;
+      height: 16px;
+      top: 68%;
+      right: 72%; }
+      @media screen and (max-width: 768px) {
+        .epigraph__line::after {
+          display: none; } }
+    .epigraph__line::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 4px;
+      height: 4px;
+      top: 98.7%;
+      left: 55.3%;
+      background-color: #000;
+      border-radius: 50%; }
+    @media screen and (max-width: 768px) {
+      .epigraph__line {
+        margin: 5px;
+        width: 15px; } }
+  .epigraph__polygon {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 94%;
+    left: 133%;
+    background-image: url("../img/polygon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    @media screen and (max-width: 768px) {
+      .epigraph__polygon {
+        top: 90%;
+        left: 133%; } }
+
+.todo {
+  max-width: 75px;
+  margin-left: 15px; }
+  @media screen and (max-width: 768px) {
+    .todo {
+      margin-left: 0; } }
+  @media screen and (max-width: 768px) {
+    .todo__1 {
+      display: none; } }
+  .todo__2 {
+    transform: translate(-182%, -109%); }
+    @media screen and (max-width: 768px) {
+      .todo__2 {
+        display: none; } }
+  .todo__3 {
+    transform: translate(-26%, -71%); }
+    @media screen and (max-width: 768px) {
+      .todo__3 {
+        display: none; } }
+  .todo__title {
+    font-family: 'TTPols';
+    font-size: 9px;
+    border-bottom: 1px #000 dashed;
+    padding-top: 25px;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 768px) {
+      .todo__title {
+        padding-top: 25px;
+        margin-bottom: 15px; } }
+  .todo__list {
+    font-family: "Mediator Narrow Web Light";
+    font-weight: lighter; }
+  .todo__item-text {
+    font-size: 8px; }
+  @media screen and (max-width: 768px) {
+    .todo__item {
+      margin-bottom: 8px; } }
+  .todo__point {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    background-color: #000;
+    border-radius: 50%; }
+  .todo__pic {
+    width: 107px;
+    height: 191px;
+    background-image: url("../img/ww.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px; }
+  .todo__mobile {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .todo__mobile {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 15%; } }
+    @media screen and (max-width: 480px) {
+      .todo__mobile {
+        margin: 0 5%; } }
+
+@media screen and (max-width: 768px) {
+  .todo__mobile-img-wrapper {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    width: 100%;
+    background-image: url("../img/ww.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; } }
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute; }
+  @media screen and (max-width: 768px) {
+    .image-wrapper {
+      position: relative;
+      margin-bottom: 25px; } }
+  .image-wrapper__1-img {
+    width: 843px;
+    height: 364px;
+    margin-bottom: 5px; }
+  @media screen and (max-width: 768px) {
+    .image-wrapper__1 {
+      display: none; } }
+  .image-wrapper__2 {
+    transform: translate(88%, -145%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__2 {
+        transform: none;
+        display: none;
+        margin-top: 25px;
+        margin-bottom: 25px; } }
+    .image-wrapper__2-img {
+      width: 332px;
+      height: 229px;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+        .image-wrapper__2-img {
+          width: 100%;
+          height: auto; } }
+  .image-wrapper__3 {
+    transform: translate(6%, -195%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__3 {
+        transform: none;
+        display: none;
+        margin-top: 25px;
+        margin-bottom: 25px; } }
+    .image-wrapper__3-img {
+      width: 446px;
+      height: 276px;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+        .image-wrapper__3-img {
+          width: 100%;
+          height: auto; } }
+  .image-wrapper__4 {
+    transform: translate(108%, -142%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__4 {
+        transform: none;
+        display: none;
+        margin-top: 25px;
+        margin-bottom: 25px; } }
+    .image-wrapper__4-img {
+      width: 257px;
+      height: 144px;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+        .image-wrapper__4-img {
+          width: 100%;
+          height: auto; } }
+  .image-wrapper__5 {
+    transform: translate(0%, -235%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__5 {
+        transform: none;
+        display: none;
+        margin-top: 25px;
+        margin-bottom: 25px; } }
+    .image-wrapper__5-img {
+      width: 480px;
+      height: 255px;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+        .image-wrapper__5-img {
+          width: 100%;
+          height: auto; } }
+  .image-wrapper__6 {
+    transform: translate(102%, -154%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__6 {
+        transform: none;
+        display: none;
+        margin-top: 25px;
+        margin-bottom: 25spx; } }
+    .image-wrapper__6-img {
+      width: 208px;
+      height: 156px;
+      margin-bottom: 5px; }
+      @media screen and (max-width: 768px) {
+        .image-wrapper__6-img {
+          width: 100%;
+          height: auto; } }
+  .image-wrapper__7 {
+    transform: translate(81%, -173%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__7 {
+        transform: none; } }
+    .image-wrapper__7-img {
+      width: 293px;
+      height: 240px;
+      margin-bottom: 5px; }
+  .image-wrapper__8 {
+    transform: translate(126%, -107%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__8 {
+        transform: none; } }
+    .image-wrapper__8-img {
+      width: 234px;
+      height: 156px;
+      margin-bottom: 5px; }
+  .image-wrapper__9 {
+    transform: translate(0%, -194%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__9 {
+        transform: none; } }
+    .image-wrapper__9-img {
+      width: 600px;
+      height: 230px;
+      margin-bottom: 5px; }
+  .image-wrapper__10 {
+    transform: translate(2%, -103%); }
+    @media screen and (max-width: 768px) {
+      .image-wrapper__10 {
+        transform: none; } }
+    .image-wrapper__10-img {
+      width: 323px;
+      height: 203px;
+      margin-bottom: 5px; }
+
+.mobile-img {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .mobile-img {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+
+.pic-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mediator";
+  font-weight: bold;
+  font-size: 7px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000; }
+
+.topline-mobile {
+  display: none;
+  position: relative; }
+  @media screen and (max-width: 768px) {
+    .topline-mobile {
+      display: flex;
+      flex-direction: column; } }
+
+/*# sourceMappingURL=main.css.map */

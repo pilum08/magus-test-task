@@ -1,0 +1,8 @@
+.topline-mobile {
+    display: none;
+    position: relative;
+    @include tablets {
+       display: flex;
+       flex-direction: column;
+    }
+}

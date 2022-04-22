@@ -1,0 +1,124 @@
+
+.page{
+    position: relative;
+    width: 600px;
+    border-right: 1px #000 solid;
+    @include tablets {
+        border: none;
+        width: inherit;
+    }
+    &__44{
+        transform: translateY(77%);
+        @include tablets {
+            transform: none;
+        }
+    }
+    &__45{
+
+        transform: translateY(77%);
+        border-right:none;
+        @include tablets {
+            transform: none;
+        }
+    }
+    &__46 {
+        transform: translateY(122%);
+        @include tablets {
+            transform: none;
+        }
+    }
+    &__47{
+        transform: translateY(122%);
+        border-right:none;
+        @include tablets {
+            transform: none;
+        }
+    }
+    &__48{
+        transform: translateY(77%);
+        @include tablets {
+            transform: none;
+        }
+    }
+    &__49{
+        transform: translateY(83%);
+        @include tablets {
+            transform: none;
+        }
+        border-right:none;
+    }
+    &__content {
+        
+        display: flex;
+    justify-content: flex-end;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    &__article{
+        font-family: 'DekaSerifNew';
+        font-size: 9px;
+        column-count: 2;
+        column-gap: 15px;
+        max-width: 432px;
+        margin-right: 45px;
+        margin-left: 15px;
+        &--weed{
+            column-gap: 152px;
+            @include tablets {
+                column-gap: 0;
+               
+            }
+            
+        }
+        @include tablets {
+            column-count: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: inherit;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    &__footer{
+        font-family: 'Mediator';
+        font-size: 10px;
+        width: 138px;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding-left: 10px;
+        &-number{
+            font-weight: bold;
+        }
+        &-date{
+            font-weight: bold;
+        }
+        justify-content: space-between;
+        @include tablets {
+            display: none;
+        }
+    }
+    &__article--bold {
+        font-family: 'Mediator';
+        text-transform: uppercase;
+       
+        font-weight: bolder;
+    }
+}
+
+.img-desc{
+    width: 50px;
+    height: 50px;
+    transform: translate(-237%, -800%);
+    font-family: 'Mediator';
+    font-weight: bold;
+    font-size: 6px;
+}
+.stars{
+    font-family: 'wingding';
+    margin:20px auto;
+    width: 25px;
+   
+}
